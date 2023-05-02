@@ -1,0 +1,97 @@
+:root {
+
+/* Colors: */
+--unnamed-color-d6dce8: #D6DCE8;
+--unnamed-color-e5eaf5: #E5EAF5;
+--unnamed-color-5ab9ea: #5AB9EA;
+--unnamed-color-b8e3f4: #B8E3F4;
+--unnamed-color-8860d0: #8860D0;
+--unnamed-color-ffffff: #FFFFFF;
+--unnamed-color-04080f: #04080F;
+
+/* Font/text values */
+--unnamed-font-family-montserrat: Montserrat;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-300: 300;
+--unnamed-font-weight-600: 600;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-weight-medium: medium;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-20: 20px;
+--unnamed-font-size-40: 40px;
+--unnamed-font-size-50: 50px;
+--unnamed-character-spacing-0-32: 0.32px;
+--unnamed-character-spacing-0-4: 0.4px;
+--unnamed-character-spacing-0-8: 0.8px;
+--unnamed-character-spacing-1-5: 1.5px;
+--unnamed-line-spacing-24: 24px;
+--unnamed-line-spacing-28: 28px;
+--unnamed-line-spacing-46: 46px;
+--unnamed-line-spacing-56: 56px;
+}
+
+/* Character Styles */
+.h1 {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-50);
+line-height: var(--unnamed-line-spacing-56);
+letter-spacing: var(--unnamed-character-spacing-1-5);
+color: var(--unnamed-color-04080f);
+}
+.h2 {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-600);
+font-size: var(--unnamed-font-size-40);
+line-height: var(--unnamed-line-spacing-46);
+letter-spacing: var(--unnamed-character-spacing-0-8);
+color: var(--unnamed-color-04080f);
+}
+.h3 {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-28);
+letter-spacing: var(--unnamed-character-spacing-0-4);
+color: var(--unnamed-color-04080f);
+}
+.body-copy-light {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-300);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0-32);
+color: var(--unnamed-color-04080f);
+}
+.body-copy-regular {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0-32);
+color: var(--unnamed-color-04080f);
+}
+.body-copy-medium {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0-32);
+color: var(--unnamed-color-04080f);
+}
+.body-copy-medium {
+font-family: var(--unnamed-font-family-montserrat);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0-32);
+color: var(--unnamed-color-ffffff);
+}
