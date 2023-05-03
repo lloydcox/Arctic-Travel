@@ -1,12 +1,3 @@
-<!-- We create a footer component that has two parts.
-The top part, which has made up of 3 columns. The first column that is to the left
-has 2 parts, the logo at the top, then the sentence "Enjoy your traveling with Arctic
-Travel beneath the logo". The middle column which has the title "Menu" then underneath it has the links 
-Home, Book your trip, Contact us. Then the last column which is to the right has the heading
-"Further Information" then terms & conditions, Privacy policy beneath,
-The bottom part of the footer has a thin black line at the top 90% of the width, centered.
-Then underneath it has "Arctic Travel 202 All Rights Reserved to the left. and then to the right
-it has 3 social media icons, instagram, facebook and twitter" -->
 <template>
   <footer class="footer">
     <div class="footer__container">
@@ -145,7 +136,6 @@ export default {
 };
 </script>
 <style lang="scss">
-/* we need to add styling for mobile we already have the styling for desktop */
 /* Mobile styles should be added here */
 .footer {
   width: 100%;
@@ -237,8 +227,6 @@ export default {
         justify-content: flex-start;
         align-items: flex-start;
         h3 {
-          width: 53px;
-          height: 22px;
           /* UI Properties */
           font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-normal) 18px/26px
@@ -254,8 +242,6 @@ export default {
           padding: 0;
           margin: 0;
           li {
-            width: 120px;
-            height: 19px;
             /* UI Properties */
             font: var(--unnamed-font-style-normal) normal
               var(--unnamed-font-weight-300) var(--unnamed-font-size-16) /
