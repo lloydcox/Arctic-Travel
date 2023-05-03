@@ -19,7 +19,7 @@
           all the details, so that you can focus on what really matters -
           enjoying the trip of a lifetime.
         </p>
-        <button class="speak-to-agent-button">Speak to an agent</button>
+        <div class="speak-to-agent-button">Speak to an agent</div>
       </div>
     </div>
   </div>
@@ -48,19 +48,22 @@ export default {
   margin: auto 30px;
 }
 
-.speak-to-agent-text {
-  width: 300px;
-  text-align: start;
+.speak-to-agent-text h2 {
+  width: 99%;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
+    30px/36px var(--unnamed-font-family-montserrat);
+  color: var(--unnamed-color-04080f);
+  text-align: left;
 }
 
-.speak-to-agent-text h2 {
-  width: 100%;
+.speak-to-agent-text p {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) 18px/26px
+    var(--unnamed-font-family-montserrat);
+  color: var(--unnamed-color-04080f);
   text-align: left;
-  font: normal 600 30px Montserrat;
-  letter-spacing: 0.6px;
-  color: #04080f;
-  opacity: 1;
-  margin: 20px auto 0;
+  font: normal normal normal 18px/26px Montserrat;
+  letter-spacing: 0.36px;
 }
 
 .speak-to-agent-image {
@@ -74,27 +77,34 @@ export default {
 }
 
 .speak-to-agent-contact {
-  width: 300px;
+  width: 302px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  text-align: center;
   p {
-    text-align: start;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300)
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24)
+      var(--unnamed-font-family-montserrat);
+    letter-spacing: var(--unnamed-character-spacing-0-32);
+    color: var(--unnamed-color-04080f);
+    text-align: left;
   }
 }
 
 .speak-to-agent-button {
   width: 214px;
   height: 51px;
-  background-color: #8860d0;
-  color: #ffffff;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--unnamed-color-8860d0) 0% 0% no-repeat padding-box;
   border-radius: 26px;
-  font-size: 16px;
-  font-weight: 700;
-  margin: 5px 0 10px;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) /
+    var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+  letter-spacing: var(--unnamed-character-spacing-0-32);
+  color: var(--unnamed-color-ffffff);
   cursor: pointer;
 }
 

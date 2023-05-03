@@ -12,14 +12,12 @@
             <p>{{ info.text }}</p>
           </li>
         </ul>
-        <div class="info-section__container__left__button">
-          <button
-            class="info-section__container__left__button__but"
-            role="button"
-            aria-label="Speak to an agent"
-          >
-            SPEAK TO AN AGENT
-          </button>
+        <div
+          class="info-section__container__left__button"
+          role="button"
+          aria-label="Speak to an agent"
+        >
+          SPEAK TO AN AGENT
         </div>
       </div>
       <div class="info-section__container__right">
@@ -76,15 +74,16 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      margin-bottom: 20px;
       h2 {
         font: var(--unnamed-font-style-normal) normal
-          var(--unnamed-font-weight-600) var(--unnamed-font-size-40) /
-          var(--unnamed-line-spacing-46) var(--unnamed-font-family-montserrat);
-        letter-spacing: var(--unnamed-character-spacing-0-8);
+          var(--unnamed-font-weight-600) 30px/36px
+          var(--unnamed-font-family-montserrat);
         color: var(--unnamed-color-04080f);
         text-align: left;
         margin: auto;
         margin-bottom: 20px;
+        letter-spacing: 0.6px;
       }
       ul {
         display: flex;
@@ -92,7 +91,7 @@ export default {
         justify-content: flex-start;
         align-items: center;
         list-style: none;
-        margin: 0;
+        margin: 0 0 16px 0;
         padding: 0;
         li {
           display: flex;
@@ -111,23 +110,26 @@ export default {
             letter-spacing: var(--unnamed-character-spacing-0-32);
             color: var(--unnamed-color-04080f);
             text-align: left;
+            margin-top: 10px;
+            margin-bottom: 30px;
           }
         }
       }
       &__button {
-        &__but {
-          border-radius: 26px;
-          width: 214px;
-          height: 51px;
-          background-color: #8860d0;
-          font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) /
-            var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
-          letter-spacing: var(--unnamed-character-spacing-0-32);
-          color: var(--unnamed-color-ffffff);
-          text-align: center;
-          cursor: pointer;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 26px;
+        width: 214px;
+        height: 51px;
+        background-color: #8860d0;
+        font: var(--unnamed-font-style-normal) normal
+          var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) /
+          var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0-32);
+        color: var(--unnamed-color-ffffff);
+        text-align: center;
+        cursor: pointer;
       }
     }
     &__right {

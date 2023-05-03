@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
 $mobile-hero-image: "@/assets/images/mobile-hero.jpg";
 $desktop-hero-image: "@/assets/images/Hero_Image.png";
 

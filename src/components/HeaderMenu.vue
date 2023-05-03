@@ -2,15 +2,15 @@
   <div class="header-menu">
     <div class="header-menu-container">
       <div class="header-menu-left">
-        <img
-          class="logo"
-          :src="require('@/assets/images/Logo.png')"
-          alt="logo"
-        />
+        <div class="logo" alt="logo"></div>
       </div>
       <div class="header-menu-right">
         <div class="header-menu-button">
-          <img src="@/assets/images/burger-menu.png" alt="menu" />
+          <img
+            src="@/assets/images/burger-menu.png"
+            class="header-menu-button-icon"
+            alt="menu"
+          />
         </div>
         <!-- button to change language -->
         <button class="header-menu-right-language" @click="changeLanguage">
@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 /* styles for mobile */
 .header-menu {
   position: absolute;
@@ -73,11 +73,22 @@ export default {
   align-items: center;
 }
 
+.header-menu-button {
+  width: 44.5px;
+  height: 30px;
+}
+.header-menu-button-icon {
+  width: 100%;
+  height: 100%;
+}
+
 .header-menu-left {
   width: 75%;
   text-align: left;
 }
 .logo {
+  background: transparent url("@/assets/images/Logo.png") 0% 0% no-repeat
+    padding-box;
   width: 192px;
   height: 60px;
 }

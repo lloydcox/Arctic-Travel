@@ -5,8 +5,12 @@
         <h2>Your Ultimate Skiing and Snowboarding Experience Starts Here</h2>
       </div>
       <div class="book-now__container__bottom">
-        <div class="book-now__container__bottom__button">
-          <button role="button" aria-label="Book Now">BOOK NOW</button>
+        <div
+          class="book-now__container__bottom__button"
+          role="button"
+          aria-label="Book Now"
+        >
+          BOOK NOW
         </div>
         <div class="book-now__container__bottom__images">
           <img
@@ -36,25 +40,26 @@ export default {
   height: 551px;
   position: relative;
   overflow: hidden;
+  margin-top: 20px;
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 30px;
+    margin: 25px 30px;
 
     &__top {
       height: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-top: 60px;
       h2 {
-        width: 100%;
+        font: var(--unnamed-font-style-normal) normal
+          var(--unnamed-font-weight-600) 30px/36px
+          var(--unnamed-font-family-montserrat);
+        color: var(--unnamed-color-04080f);
         text-align: left;
-        font: normal normal 600 30px Montserrat;
-        letter-spacing: 0.8px;
-        color: #04080f;
-        margin: 0;
+        font: normal normal 600 30px/36px Montserrat;
+        letter-spacing: 0.6px;
       }
     }
     &__bottom {
@@ -63,24 +68,27 @@ export default {
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+      margin-top: 5px;
       &__button {
-        margin: 25px 25px 0 0;
-        button {
-          width: 146px;
-          height: 51px;
-          background-color: #8806d0;
-          border: none;
-          border-radius: 26px;
-          font-size: 16px;
-          font-weight: 400;
-          text-align: center;
-          color: #ffffff;
-          cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 146px;
+        height: 51px;
+        background: var(--unnamed-color-8860d0) 0% 0% no-repeat padding-box;
+        border-radius: 26px;
+        font: var(--unnamed-font-style-normal) normal
+          var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) /
+          var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+        letter-spacing: var(--unnamed-character-spacing-0-32);
+        color: var(--unnamed-color-ffffff);
+        text-align: center;
+        cursor: pointer;
+        margin: 0;
 
-          &:hover {
-            background-color: #000000;
-            color: #ffffff;
-          }
+        &:hover {
+          background-color: #000000;
+          color: #ffffff;
         }
       }
 
@@ -97,7 +105,7 @@ export default {
           z-index: 2;
         }
         &__snowflake {
-          width: 330px !important;
+          width: 300px !important;
           height: 172px !important;
           color: #d6dce8;
           position: absolute;

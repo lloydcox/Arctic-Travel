@@ -103,7 +103,7 @@ export default {
               id: 7,
               src: region7,
               alt: "Aerial view of a ski resort",
-              description: "Oceania",
+              description: "New Zealand",
             },
           ],
           isActive: true,
@@ -287,7 +287,7 @@ export default {
 // mobile styles
 .selection-gallery {
   width: 100%;
-  margin-top: -175px;
+  margin: -175px 0 10px 0;
   background: #e5eaf5;
   opacity: 1;
   z-index: 2;
@@ -405,8 +405,14 @@ export default {
           }
           & h5 {
             width: 100%;
+            font: var(--unnamed-font-style-normal) normal
+              var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+              var(--unnamed-line-spacing-24)
+              var(--unnamed-font-family-montserrat);
+            letter-spacing: var(--unnamed-character-spacing-0-32);
+            color: var(--unnamed-color-04080f);
+            text-align: left;
             margin: 10px 0 20px;
-            text-align: start;
           }
         }
       }
@@ -419,7 +425,6 @@ export default {
     margin-top: -100px;
     .selection-gallery-container {
       width: 1400px;
-      height: 664px;
       top: 0;
       left: 0px;
       opacity: 1;
@@ -442,12 +447,17 @@ export default {
           padding: 0.5em 1em;
           border-radius: 26px;
           margin-right: 0;
+          font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) /
+            var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+          letter-spacing: var(--unnamed-character-spacing-0-32);
+          color: var(--unnamed-color-04080f);
           text-align: center;
           cursor: pointer;
           background-color: transparent;
           &:hover {
-            background-color: #5ab9ea;
-            color: #fff;
+            background: var(--unnamed-color-5ab9ea) 0% 0% no-repeat padding-box;
+            color: var(--unnamed-color-ffffff);
           }
         }
         &__button--prev {
@@ -462,7 +472,6 @@ export default {
         display: flex;
         justify-content: center;
         width: 1280px;
-        height: 550px;
         top: 742px;
         left: 60px;
         margin: 0 auto;
@@ -476,9 +485,6 @@ export default {
           flex-wrap: wrap;
           width: 1256px;
           position: relative;
-          height: 485px;
-          // top: 742px;
-          // left: 60px;
           border-radius: 5px;
           margin-top: 10px;
           background: #fff;
@@ -493,12 +499,14 @@ export default {
               object-fit: cover;
             }
             h5 {
-              width: auto;
-              margin: 5px auto;
+              font: var(--unnamed-font-style-normal) normal
+                var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+                var(--unnamed-line-spacing-24)
+                var(--unnamed-font-family-montserrat);
+              letter-spacing: var(--unnamed-character-spacing-0-32);
+              color: var(--unnamed-color-04080f);
               text-align: left;
-              color: #04080f;
-              font: normal normal normal 16px/24px Montserrat;
-              letter-spacing: 0.32px;
+              margin-bottom: 5px;
             }
           }
         }

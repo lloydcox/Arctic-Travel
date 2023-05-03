@@ -71,7 +71,7 @@ export default {
       },
       {
         id: 2,
-        src: region2,
+        src: region4,
         alt: "Aerial view of a ski resort",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         name: "Europe Resort",
@@ -85,7 +85,7 @@ export default {
       },
       {
         id: 4,
-        src: region4,
+        src: region2,
         alt: "Aerial view of a ski resort",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         name: "USA Resort 2",
@@ -153,11 +153,10 @@ export default {
 
 .carousel__paragraph {
   h3 {
-    width: 300px;
-    height: 152px;
+    width: 95%;
     /* UI Properties */
     font: var(--unnamed-font-style-normal) normal
-      var(--unnamed-font-weight-normal) 18px/26px
+      var(--unnamed-font-weight-normal) 18px
       var(--unnamed-font-family-montserrat);
     color: var(--unnamed-color-04080f);
     text-align: center;
@@ -192,7 +191,7 @@ export default {
 
 .carousel__item__container {
   width: 80%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,7 +222,7 @@ export default {
   width: 186px;
   height: 19px;
   font: var(--unnamed-font-style-normal) normal
-    var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+    var(--unnamed-font-weight-medium) var(--unnamed-font-size-16) /
     var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
   letter-spacing: var(--unnamed-character-spacing-0-32);
   color: var(--unnamed-color-04080f);
@@ -240,6 +239,7 @@ export default {
   letter-spacing: var(--unnamed-character-spacing-0-32);
   color: var(--unnamed-color-04080f);
   text-align: center;
+  margin: 5px 0;
 }
 
 .vueperslides__arrow--prev,
@@ -305,6 +305,7 @@ export default {
 
   .carousel__title h1 {
     width: 638px;
+    height: auto;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       var(--unnamed-font-size-40) / var(--unnamed-line-spacing-46)
       var(--unnamed-font-family-montserrat);
@@ -315,6 +316,7 @@ export default {
 
   .carousel__paragraph h3 {
     width: 783px;
+    height: auto;
     font: var(--unnamed-font-style-normal) normal
       var(--unnamed-font-weight-normal) var(--unnamed-font-size-20) /
       var(--unnamed-line-spacing-28) var(--unnamed-font-family-montserrat);
@@ -365,14 +367,16 @@ export default {
 
   .carousel__item__image {
     width: 361px;
-    height: auto;
+    height: 414px;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
   }
 
   .carousel__item__image img {
     width: 100%;
-    height: 414px;
+    height: auto;
+    transform: scale(1.2);
   }
 
   .carousel__item__details {

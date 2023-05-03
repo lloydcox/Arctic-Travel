@@ -47,7 +47,7 @@ export default {
   }
 
   .keep-scrolling-image {
-    top: -27vh;
+    top: -24vh;
     z-index: 5;
     right: 0vw;
     left: auto;

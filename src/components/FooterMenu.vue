@@ -148,9 +148,7 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 30px;
+      margin: 44px 30px 20px;
       &__left {
         height: 100%;
         display: flex;
@@ -185,15 +183,14 @@ export default {
         h3 {
           width: 53px;
           height: 22px;
+          margin-bottom: 0px;
           /* UI Properties */
           font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-normal) 18px/26px
+            var(--unnamed-font-weight-medium) 18px/26px
             var(--unnamed-font-family-montserrat);
           color: var(--unnamed-color-04080f);
           text-align: left;
-          font: normal normal normal 18px/26px Montserrat;
           letter-spacing: 0.36px;
-          color: #04080f;
         }
         ul {
           list-style: none;
@@ -202,6 +199,7 @@ export default {
           li {
             width: 120px;
             height: 19px;
+            margin: 20px 0;
             /* UI Properties */
             font: var(--unnamed-font-style-normal) normal
               var(--unnamed-font-weight-300) var(--unnamed-font-size-16) /
@@ -210,12 +208,9 @@ export default {
             letter-spacing: var(--unnamed-character-spacing-0-32);
             color: var(--unnamed-color-04080f);
             text-align: left;
-            font: normal normal 300 16px/24px Montserrat;
             letter-spacing: 0.32px;
-            color: #04080f;
             a {
               text-decoration: none;
-              color: #000000;
             }
           }
         }
@@ -229,13 +224,12 @@ export default {
         h3 {
           /* UI Properties */
           font: var(--unnamed-font-style-normal) normal
-            var(--unnamed-font-weight-normal) 18px/26px
+            var(--unnamed-font-weight-medium) 18px/26px
             var(--unnamed-font-family-montserrat);
           color: var(--unnamed-color-04080f);
           text-align: left;
-          font: normal normal normal 18px/26px Montserrat;
           letter-spacing: 0.36px;
-          color: #04080f;
+          margin-bottom: 0px;
         }
         ul {
           list-style: none;
@@ -250,12 +244,10 @@ export default {
             letter-spacing: var(--unnamed-character-spacing-0-32);
             color: var(--unnamed-color-04080f);
             text-align: left;
-            font: normal normal 300 16px/24px Montserrat;
             letter-spacing: 0.32px;
-            color: #04080f;
+            margin: 20px 0;
             a {
               text-decoration: none;
-              color: #000000;
             }
           }
         }
@@ -275,7 +267,7 @@ export default {
         margin-bottom: 20px;
       }
       &__icons {
-        width: 40%;
+        width: 45%;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -290,11 +282,12 @@ export default {
         justify-content: flex-start;
         align-items: center;
         p {
+          font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-300) var(--unnamed-font-size-16) /
+            var(--unnamed-line-spacing-24) var(--unnamed-font-family-montserrat);
+          letter-spacing: var(--unnamed-character-spacing-0-32);
+          color: var(--unnamed-color-04080f);
           text-align: left;
-          font: normal normal 300 16px/24px Montserrat;
-          letter-spacing: 0.32px;
-          color: #04080f;
-          width: 300px;
         }
       }
     }
