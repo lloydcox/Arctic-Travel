@@ -64,7 +64,7 @@ export default {
     slides: [
       {
         id: 1,
-        src: region1, 
+        src: region1,
         alt: "Aerial view of a ski resort",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         name: "USA Resort Colorado",
@@ -275,7 +275,7 @@ export default {
   background-size: 100%;
   vertical-align: middle;
   color: #000;
-  filter: invert(1); 
+  filter: invert(1);
 }
 .vueperslides__arrow--next {
   transform: translateY(-50%) rotate(270deg);

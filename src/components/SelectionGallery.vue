@@ -263,7 +263,7 @@ export default {
     const setDisplay = () => {
       this.isMobile = window.innerWidth < 768;
       const tab = {
-        isActive: this.activeTab.id === 1, 
+        isActive: this.activeTab.id === 1,
       };
       if (this.isMobile) {
         document.getElementsByClassName("active")[0].style.display =
@@ -345,7 +345,7 @@ export default {
           background-size: 100%;
           vertical-align: middle;
           color: #000;
-          filter: invert(1); 
+          filter: invert(1);
           transform: rotate(270deg);
         }
       }
@@ -369,7 +369,7 @@ export default {
           background-size: 100%;
           vertical-align: middle;
           color: #000;
-          filter: invert(1); 
+          filter: invert(1);
           transform: rotate(90deg);
         }
       }
