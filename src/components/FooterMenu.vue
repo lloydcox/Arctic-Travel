@@ -385,8 +385,6 @@ export default {
           align-items: flex-start;
           margin-left: 100px;
           h3 {
-            width: 53px;
-            height: 22px;
             /* UI Properties */
             font: var(--unnamed-font-style-normal) normal
               var(--unnamed-font-weight-normal) 18px/26px
@@ -402,8 +400,6 @@ export default {
             padding: 0;
             text-align: start;
             li {
-              width: 120px;
-              height: 19px;
               font: var(--unnamed-font-style-normal) normal
                 var(--unnamed-font-weight-300) var(--unnamed-font-size-16) /
                 var(--unnamed-line-spacing-24)

@@ -1,10 +1,3 @@
-<!-- In this component we create a component that is split into left and right parts
-  the left side has a h2 title "Choose Arctic Travel for a Hassle-Free, Customisable, 
-  and Affordable Holiday" it then has 3 list items, each has an image to te left, then
-   a sentence to the right of it the image and senetence are in the information object 
-   lastly underneath the three items is a "speak to an agent" button
-on the right of the page is an image that takes up the full height of the section and the right side
-  -->
 <template>
   <div class="info-section" aria-label="Arctic Travel information">
     <div class="info-section__container">

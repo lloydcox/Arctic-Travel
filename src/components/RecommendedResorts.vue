@@ -64,7 +64,7 @@ export default {
     slides: [
       {
         id: 1,
-        src: region1, // Use the imported image sources
+        src: region1, 
         alt: "Aerial view of a ski resort",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         name: "USA Resort Colorado",
@@ -275,7 +275,7 @@ export default {
   background-size: 100%;
   vertical-align: middle;
   color: #000;
-  filter: invert(1); /* add a filter to invert colors */
+  filter: invert(1); 
 }
 .vueperslides__arrow--next {
   transform: translateY(-50%) rotate(270deg);
@@ -290,23 +290,21 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #f5f5f5; */ /* Comments in CSS should use slashes instead of double slashes (//) */
   }
 
   .carousel__title {
     width: 638px;
     /* UI Properties */
     text-align: center;
-    font-family: Montserrat; /* font property should include font-weight, font-style, font-size, and font-family */
+    font-family: Montserrat;
     letter-spacing: 0.8px;
     color: #04080f;
     opacity: 1;
-    margin: 0; /* h1 is a block element and has a default margin. Overrides default margin */
+    margin: 0;
   }
 
   .carousel__title h1 {
-    /* Nested selectors require the parent selector */
-    margin: 20px;
+    width: 638px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       var(--unnamed-font-size-40) / var(--unnamed-line-spacing-46)
       var(--unnamed-font-family-montserrat);
@@ -315,8 +313,7 @@ export default {
     text-align: center;
   }
 
-  .carousel__paragraph {
-    /* h3 { */ /* Nested h3 selector is not allowed */
+  .carousel__paragraph h3 {
     width: 783px;
     font: var(--unnamed-font-style-normal) normal
       var(--unnamed-font-weight-normal) var(--unnamed-font-size-20) /
@@ -441,7 +438,7 @@ export default {
     background-size: 100%;
     vertical-align: middle;
     color: #000;
-    filter: invert(1); /* add a filter to invert colors */
+    filter: invert(1);
   }
   .vueperslides__arrow--next {
     transform: translateY(-50%) rotate(270deg);
