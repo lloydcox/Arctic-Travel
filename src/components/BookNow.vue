@@ -15,7 +15,7 @@
         <div class="book-now__container__bottom__images">
           <img
             class="book-now__container__bottom__images__snowflake"
-            src="../assets/images/star.png"
+            :src="snowflakeImage"
             alt="visa"
           />
           <img src="../assets/images/image1.png" alt="Jump" />
@@ -26,9 +26,15 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "BookNow",
+  data() {
+    return {
+      snowflakeImage: require("@/assets/images/star.png"),
+    };
+  },
 };
 </script>
 <style lang="scss">

@@ -15,6 +15,11 @@
 <script>
 export default {
   name: "TopBanner",
+  data() {
+    return {
+      mobileHereImage: require("@/assets/images/mobile-hero.jpg"),
+    };
+  },
 };
 </script>
 
