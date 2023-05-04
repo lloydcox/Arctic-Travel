@@ -97,7 +97,7 @@ export default {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          align-items: start;
+          align-items: flex-start;
           img {
             width: 60px;
             height: 60px;

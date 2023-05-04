@@ -49,7 +49,7 @@ export default {
 }
 
 .speak-to-agent-text h2 {
-  width: 99%;
+  width: 98%;
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
     30px/36px var(--unnamed-font-family-montserrat);
   color: var(--unnamed-color-04080f);

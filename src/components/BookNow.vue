@@ -38,23 +38,22 @@ export default {
 };
 </script>
 <style lang="scss">
+// mobile styles
 .book-now {
   width: 100%;
   background: #e5eaf5 0% 0% no-repeat padding-box;
   border-radius: 80px 80px 0px 0px;
   opacity: 1;
-  height: 551px;
   position: relative;
   overflow: hidden;
   margin-top: 20px;
   &__container {
+    height: 551px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 25px 30px;
-
+    justify-content: center;
+    margin: 25px 30px 0px;
     &__top {
-      height: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -71,7 +70,7 @@ export default {
     &__bottom {
       height: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: flex-start;
       flex-direction: column;
       margin-top: 5px;
@@ -103,6 +102,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        position: relative;
         img {
           width: 116px;
           height: auto;
@@ -111,11 +111,11 @@ export default {
           z-index: 2;
         }
         &__snowflake {
-          width: 300px !important;
-          height: 172px !important;
+          width: 265px !important;
+          height: 130px !important;
           color: #d6dce8;
           position: absolute;
-          margin: 0 -40px 0 0 !important;
+          margin: 0 70px 0 0 !important;
           right: 0;
           bottom: 0;
           z-index: 1;
@@ -170,9 +170,10 @@ export default {
         flex-direction: row;
 
         &__button {
-          margin: 25px 30px 0 0;
+          width: 160px;
+          margin: 25px 40px 0 0;
           button {
-            width: 146px;
+            width: 160x;
             height: 51px;
             /* UI Properties */
             background: var(--unnamed-color-8860d0) 0% 0% no-repeat padding-box;

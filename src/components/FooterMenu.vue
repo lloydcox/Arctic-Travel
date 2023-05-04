@@ -158,6 +158,7 @@ export default {
         img {
           width: 192px;
           height: 58px;
+          margin-bottom: 10px;
         }
         p {
           width: 280px;
@@ -211,6 +212,7 @@ export default {
             letter-spacing: 0.32px;
             a {
               text-decoration: none;
+              color: #04080f;
             }
           }
         }
@@ -248,6 +250,7 @@ export default {
             margin: 20px 0;
             a {
               text-decoration: none;
+              color: #04080f;
             }
           }
         }
