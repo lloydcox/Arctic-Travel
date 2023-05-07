@@ -139,48 +139,53 @@ export default {
 /* Mobile styles should be added here */
 .footer {
   width: 100%;
+
   &__container {
     display: flex;
     flex-direction: column;
+    margin: 44px 30px;
+
     &__top {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      margin: 44px 30px 20px;
+
       &__left {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
         img {
           width: 192px;
           height: 58px;
           margin-bottom: 10px;
         }
+
         p {
           width: 280px;
           height: 48px;
+          margin: 40px auto 30px;
           /* UI Properties */
           font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-normal) 18px/26px
             var(--unnamed-font-family-montserrat);
           color: var(--unnamed-color-04080f);
           text-align: left;
-          font: normal normal normal 18px/26px Montserrat;
-          letter-spacing: 0.36px;
-          color: #04080f;
-          opacity: 1;
         }
       }
+
       &__middle {
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
         h3 {
           width: 53px;
           height: 22px;
@@ -193,10 +198,12 @@ export default {
           text-align: left;
           letter-spacing: 0.36px;
         }
+
         ul {
           list-style: none;
           padding: 0;
           margin: 0;
+
           li {
             width: 120px;
             height: 19px;
@@ -210,6 +217,7 @@ export default {
             color: var(--unnamed-color-04080f);
             text-align: left;
             letter-spacing: 0.32px;
+
             a {
               text-decoration: none;
               color: #04080f;
@@ -217,12 +225,15 @@ export default {
           }
         }
       }
+
       &__right {
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
         h3 {
           /* UI Properties */
           font: var(--unnamed-font-style-normal) normal
@@ -233,10 +244,12 @@ export default {
           letter-spacing: 0.36px;
           margin-bottom: 0px;
         }
+
         ul {
           list-style: none;
           padding: 0;
           margin: 0;
+
           li {
             /* UI Properties */
             font: var(--unnamed-font-style-normal) normal
@@ -248,6 +261,7 @@ export default {
             text-align: left;
             letter-spacing: 0.32px;
             margin: 20px 0;
+
             a {
               text-decoration: none;
               color: #04080f;
@@ -256,34 +270,39 @@ export default {
         }
       }
     }
+
     &__bottom {
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin: 30px;
+
       &__line {
         width: 100%;
         height: 1px;
         background-color: #000000;
         margin-bottom: 20px;
       }
+
       &__icons {
         width: 45%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         svg {
           width: 40px;
           height: 40px;
         }
       }
+
       &__text {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
         p {
           font: var(--unnamed-font-style-normal) normal
             var(--unnamed-font-weight-300) var(--unnamed-font-size-16) /
@@ -296,17 +315,18 @@ export default {
     }
   }
 }
+
 /* desktop */
 /* mediaquery for screen size 1280px */
 @media only screen and (min-width: 1280px) {
   .footer {
     &__container {
-      width: 1280px;
       height: 275px;
       margin: 40px 60px 19px;
+
       &__top {
         flex-direction: row;
-        margin-left: 0px;
+
         &__left {
           width: 485px;
           height: 100%;
@@ -314,10 +334,12 @@ export default {
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
+
           img {
             width: 192px;
             height: 57px;
           }
+
           p {
             width: 280px;
             height: 48px;
@@ -328,6 +350,7 @@ export default {
             text-align: left;
           }
         }
+
         &__middle {
           width: 120px;
           height: 100%;
@@ -336,6 +359,7 @@ export default {
           justify-content: flex-start;
           align-items: flex-start;
           margin-left: 50px;
+
           h3 {
             width: 53px;
             height: 22px;
@@ -349,10 +373,12 @@ export default {
             letter-spacing: 0.36px;
             color: #04080f;
           }
+
           ul {
             list-style: none;
             padding: 0;
             text-align: start;
+
             li {
               width: 120px;
               height: 19px;
@@ -366,12 +392,14 @@ export default {
               font: normal normal 300 16px/24px Montserrat;
               letter-spacing: 0.32px;
               color: #04080f;
+
               a {
                 text-decoration: none;
               }
             }
           }
         }
+
         &__right {
           width: 671px;
           height: 100%;
@@ -380,6 +408,7 @@ export default {
           justify-content: flex-start;
           align-items: flex-start;
           margin-left: 100px;
+
           h3 {
             /* UI Properties */
             font: var(--unnamed-font-style-normal) normal
@@ -391,10 +420,12 @@ export default {
             letter-spacing: 0.36px;
             color: #04080f;
           }
+
           ul {
             list-style: none;
             padding: 0;
             text-align: start;
+
             li {
               font: var(--unnamed-font-style-normal) normal
                 var(--unnamed-font-weight-300) var(--unnamed-font-size-16) /
@@ -406,6 +437,7 @@ export default {
               font: normal normal 300 16px/24px Montserrat;
               letter-spacing: 0.32px;
               color: #04080f;
+
               a {
                 text-decoration: none;
               }
@@ -413,17 +445,19 @@ export default {
           }
         }
       }
+
       &__bottom {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        margin-left: 0px;
+
         &__line {
           height: 1px;
           background-color: #000000;
           margin-bottom: 20px;
         }
+
         &__text {
           p {
             width: 300px;
@@ -441,8 +475,10 @@ export default {
             color: #04080f;
           }
         }
+
         &__icons {
           justify-content: flex-end;
+
           svg {
             margin-left: 10px;
           }

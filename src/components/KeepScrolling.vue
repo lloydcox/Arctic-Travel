@@ -29,7 +29,7 @@ export default {
   height: 110px;
   max-width: 110px;
   max-height: 110px;
-  top: -14vh;
+  top: -11vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -47,7 +47,7 @@ export default {
   }
 
   .keep-scrolling-image {
-    top: -17vh;
+    top: -23vh;
     z-index: 5;
     right: 0vw;
     left: auto;

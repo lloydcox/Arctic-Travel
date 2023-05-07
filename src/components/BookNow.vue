@@ -47,16 +47,19 @@ export default {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
+
   &__container {
     height: 551px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 25px 30px 0px;
+
     &__top {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
+
       h2 {
         font: var(--unnamed-font-style-normal) normal
           var(--unnamed-font-weight-600) 30px/36px
@@ -67,6 +70,7 @@ export default {
         letter-spacing: 0.6px;
       }
     }
+
     &__bottom {
       height: 100%;
       display: flex;
@@ -74,6 +78,7 @@ export default {
       align-items: flex-start;
       flex-direction: column;
       margin-top: 5px;
+
       &__button {
         display: flex;
         justify-content: center;
@@ -103,6 +108,7 @@ export default {
         align-items: center;
         height: 100%;
         position: relative;
+
         img {
           width: 116px;
           height: auto;
@@ -110,6 +116,7 @@ export default {
           margin: 30px 18px 30px 0;
           z-index: 2;
         }
+
         &__snowflake {
           width: 265px !important;
           height: 130px !important;
@@ -133,12 +140,14 @@ export default {
     background: #e5eaf5 0% 0% no-repeat padding-box;
     border-radius: 80px 80px 0px 0px;
     opacity: 1;
+
     &__container {
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin: 0 0 0 60px;
+
       &__top {
         width: 45%;
         height: auto;
@@ -146,6 +155,7 @@ export default {
         justify-content: flex-start;
         align-items: flex-start;
         margin-top: 60px;
+
         h2 {
           width: 580px;
           height: 141px;
@@ -162,6 +172,7 @@ export default {
           opacity: 1;
         }
       }
+
       &__bottom {
         height: auto;
         display: flex;
@@ -172,6 +183,7 @@ export default {
         &__button {
           width: 160px;
           margin: 25px 40px 0 0;
+
           button {
             width: 160x;
             height: 51px;
@@ -195,12 +207,14 @@ export default {
           align-items: center;
           height: 100%;
           overflow: hidden;
+
           img {
             width: 100%;
             height: auto;
             border-radius: 10px 10px 0 0;
             margin: 0px 20px;
           }
+
           &__snowflake {
             width: 422px !important;
             height: 277px !important;

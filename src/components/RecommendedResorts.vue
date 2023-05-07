@@ -1,42 +1,44 @@
 <template>
-  <div class="carousel__container">
-    <div class="carousel__title">
-      <h1>Recommended Resorts</h1>
-    </div>
-    <div class="carousel__paragraph">
-      <h3>
-        We have carefully curated a collection of the finest ski resorts around
-        the world, from the snow-capped peaks of the Alps to the rugged beauty
-        of the Rockies.
-      </h3>
-    </div>
-    <div class="vueper-container">
-      <vueper-slides
-        class="no-shadow"
-        :visible-slides="3"
-        arrowsOutside="true"
-        :gap="2"
-        :breakpoints="breakpoints"
-        :bullets="false"
-      >
-        <vueper-slide
-          class="vueperslide"
-          v-for="slide in slides"
-          :key="slide.id"
+  <div class="carousel-section">
+    <div class="carousel__container">
+      <div class="carousel__title">
+        <h1>Recommended Resorts</h1>
+      </div>
+      <div class="carousel__paragraph">
+        <h3>
+          We have carefully curated a collection of the finest ski resorts
+          around the world, from the snow-capped peaks of the Alps to the rugged
+          beauty of the Rockies.
+        </h3>
+      </div>
+      <div class="vueper-container">
+        <vueper-slides
+          class="no-shadow"
+          :visible-slides="3"
+          arrowsOutside="true"
+          :gap="2"
+          :breakpoints="breakpoints"
+          :bullets="false"
         >
-          <template #content>
-            <div class="carousel__item__container">
-              <div class="carousel__item__image">
-                <img :src="slide.src" :alt="slide.alt" />
+          <vueper-slide
+            class="vueperslide"
+            v-for="slide in slides"
+            :key="slide.id"
+          >
+            <template #content>
+              <div class="carousel__item__container">
+                <div class="carousel__item__image">
+                  <img :src="slide.src" :alt="slide.alt" />
+                </div>
+                <div class="carousel__item__details">
+                  <h2>{{ slide.name }}</h2>
+                  <p>{{ slide.description }}</p>
+                </div>
               </div>
-              <div class="carousel__item__details">
-                <h2>{{ slide.name }}</h2>
-                <p>{{ slide.description }}</p>
-              </div>
-            </div>
-          </template>
-        </vueper-slide>
-      </vueper-slides>
+            </template>
+          </vueper-slide>
+        </vueper-slides>
+      </div>
     </div>
   </div>
 </template>
@@ -130,6 +132,11 @@ export default {
 
 <style lang="scss">
 // Mobile styles
+
+.carousel-section {
+  width: 100%;
+}
+
 .carousel__container {
   height: 100%;
   box-sizing: border-box;
@@ -139,6 +146,7 @@ export default {
   justify-content: center;
   margin: 30px;
 }
+
 .carousel__title {
   h1 {
     width: 300px;
@@ -204,6 +212,7 @@ export default {
   border-radius: 10px;
   overflow: hidden;
   margin: 5px;
+
   img {
     width: 100%;
     height: 238px;
@@ -261,10 +270,12 @@ export default {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
   svg {
     display: contents;
   }
 }
+
 .vueperslides__arrow--prev::after,
 .vueperslides__arrow--next::after {
   content: "";
@@ -277,11 +288,13 @@ export default {
   color: #000;
   filter: invert(1);
 }
+
 .vueperslides__arrow--next {
   transform: translateY(-50%) rotate(270deg);
   right: -1em !important;
   left: auto !important;
 }
+
 @media only screen and (min-width: 1280px) {
   .carousel__container {
     height: 100%;
@@ -409,6 +422,7 @@ export default {
   .carousel {
     position: relative;
   }
+
   .vueperslides__arrow--prev,
   .vueperslides__arrow--next {
     width: 43px;
@@ -428,10 +442,12 @@ export default {
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
     svg {
       display: contents;
     }
   }
+
   .vueperslides__arrow--prev::after,
   .vueperslides__arrow--next::after {
     content: "";
@@ -444,6 +460,7 @@ export default {
     color: #000;
     filter: invert(1);
   }
+
   .vueperslides__arrow--next {
     transform: translateY(-50%) rotate(270deg);
     right: -3em !important;
